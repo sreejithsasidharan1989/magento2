@@ -28,7 +28,7 @@ jobs:
       env:
         COMPOSER_AUTH: ${{secrets.COMPOSER_AUTH}}
       with:
-        php: '7.4'
+        php: '8.1'
         process: 'unit-test'
         elasticsearch: 1
     - name: 'launch magento2 build step'
@@ -36,6 +36,6 @@ jobs:
       env:
         COMPOSER_AUTH: ${{secrets.COMPOSER_AUTH}}
       with:
-        php: '7.4'
+        php: '8.1'
         process: 'build'
         elasticsearch: 1
